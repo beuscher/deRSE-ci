@@ -1,0 +1,14 @@
+name: Hello CI
+run-name: Hello ${{ github.actor }}, this action was triggered by ${{ github.event_name }}
+on: [push, pull_request]
+jobs:
+    hello_job:
+        name: hello
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello CI, running on ${{ runner.os }}"
+            - name: Check out repository code
+              uses: actions/checkout@v4
+            - name: list files
+              run: |
+                ls ${{ github.workspace }}

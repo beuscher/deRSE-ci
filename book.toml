@@ -1,0 +1,6 @@
+[book]
+authors = ["Maximilian Beuscher"]
+language = "en"
+multilingual = false
+src = ""
+title = "Getting up and running with your First CI/CD pipeline"

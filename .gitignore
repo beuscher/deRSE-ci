@@ -1,0 +1,9 @@
+book
+venv
+
+*.aux
+*.log
+*.fdb_latexmk
+*.fls
+*.pdf
+
