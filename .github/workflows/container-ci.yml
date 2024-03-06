@@ -21,7 +21,7 @@ jobs:
                     pylint --disable=import-outside-toplevel mandelbrot.py
                 - name: Generate the mandelbrot set
                   run: |
-                    python mandelbrot.py
+                    python mandelbrot.py --pdf
                 - name: Output as Artifact
                   uses: actions/upload-artifact@v4
                   with:
